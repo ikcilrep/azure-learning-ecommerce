@@ -16,7 +16,7 @@ public static class PostComment
 {
     [FunctionName("PostComment")]
     public static async Task<IActionResult> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "post", Route = "comment")]
+        [HttpTrigger(AuthorizationLevel.Function, "post", Route = "comments")]
         HttpRequest req, ILogger log,
         [CosmosDB(databaseName: "Ecommerce", containerName: "Comments",
             Connection =
