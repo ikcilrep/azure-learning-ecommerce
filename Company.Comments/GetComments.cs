@@ -14,7 +14,7 @@ public static class GetComments
 {
     [FunctionName("GetComments")]
     public static async Task<IActionResult> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "comments/{id}")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "comments/{id}")]
         HttpRequest req,
         [CosmosDB(
             databaseName: "Ecommerce",
