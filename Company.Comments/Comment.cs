@@ -10,7 +10,7 @@ public class Comment
 
     public string Text { get; set; }
 
-    public string AuthorEmail { get; set; }
+    public string UserId { get; set; }
 
     public string ProductId { get; set; }
 
