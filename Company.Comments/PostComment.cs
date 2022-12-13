@@ -44,7 +44,7 @@ public static class PostComment
         log.LogInformation("Comment added");
         await AddCommentToProduct(comment, client, log);
 
-        return new OkObjectResult(commentsOut);
+        return new OkObjectResult(comment);
     }
 
     private static async Task AddCommentToProduct(Comment comment, CosmosClient client, ILogger log)
